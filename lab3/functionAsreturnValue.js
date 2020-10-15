@@ -7,4 +7,4 @@ function foo(){
 let bar = foo();
 bar();
 
-// foo()();
+foo()();
