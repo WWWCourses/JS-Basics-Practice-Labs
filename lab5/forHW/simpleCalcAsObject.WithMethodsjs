@@ -1,0 +1,35 @@
+// TASK: define object calc with 2 methods ('add' and 'mult'), which works as given bellow:
+
+calc.add(2,3);   // 5
+calc.mult(2,3);  // 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Solution:
+// let calc = {
+// 	'add': function (x,y) {
+// 		console.log(x+y);
+// 	},
+// 	'mult': function (x,y) {
+// 		console.log(x*y);
+// 	}
+// }
