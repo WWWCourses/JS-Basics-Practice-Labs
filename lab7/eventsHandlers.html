@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>eventsHandlers </title>
+	<style>
+		.test{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	test: <input type="text" class="test" >
+	<button id="btnTest" onclick="clickHandler();" >Test</button>
+
+	<script>
+		// element.addEventListener(eventName, functionDefinition [, options])
+		let input = document.querySelector('.test');
+		input.addEventListener('contextmenu', onContextMenu );
+
+
+		function clickHandler() {
+			console.log(`Hello`);
+		}
+		function onContextMenu() {
+			console.log(`right click`);
+		}
+	</script>
+</body>
+</html>
