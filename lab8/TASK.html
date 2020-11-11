@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK </title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        .btn {
+            background-color: red;
+        }
+
+        [type="text"] {
+            border: 3px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <label>user name <input type="text"></label>
+    <label>user pass <input type="password"></label>
+    <!-- <button class="btn">Send</button> -->
+
+    <script>
+        let button = document.querySelector(".btn");
+        let input = document.querySelector('[type="text"]');
+
+        function getInputValue() {
+            console.log(input.value);
+        }
+
+
+		// button.addEventListener('click', getInputValue);
+
+		input.addEventListener('input', function() {
+            let str = input.value;
+
+            let lastLetter = str[str.length-1];
+            if( lastLetter ==="a"){
+                console.log(`hello`);
+            }
+        })
+
+        // getInputValue();
+    </script>
+</body>
+
+</html>

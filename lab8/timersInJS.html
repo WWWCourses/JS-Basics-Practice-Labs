@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>timersInJS </title>
+</head>
+<body>
+	<button class="btnChange">change div</button>
+
+
+	<script>
+		let btnChange = document.querySelector('.btnChange');
+
+		function changeColor() {
+			console.log(`test`);
+			setTimeout( function () {
+				document.body.style.backgroundColor = "red";
+			} , 1000);
+
+		}
+
+
+		btnChange.addEventListener('click', changeColor );
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>changeCSSwithJS </title>
+	<style>
+		.test{
+			background-color: red;
+			font-size: 50px;
+			/* border: 5px solid blue; */
+		}
+		.changed{
+			background-color: #333;
+			border: 5px solid blue;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="test">test</div>
+	<button class="btnChange">change div</button>
+
+
+	<script>
+		let btnChange = document.querySelector('.btnChange');
+
+		let divTest = document.querySelector('.test');
+		console.dir(divTest.style);
+
+		btnChange.addEventListener('click', function (event) {
+			// divTest.style.backgroundColor = "#333";
+			// divTest.style.border = "5px solid blue";
+			// divTest.style.color = "white";
+
+
+			// console.dir(divTest.classList);
+			// console.dir(divTest.className);
+
+			divTest.classList.add("changed");
+
+		})
+
+
+	</script>
+</body>
+</html>
